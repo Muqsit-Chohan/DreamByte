@@ -1,0 +1,8 @@
+{
+  "name": "DreamByte",
+  "description": "DreamByte builds Nexora OS — the AI-powered operating system for South Asian content creators.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
