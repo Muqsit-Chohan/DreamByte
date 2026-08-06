@@ -7,7 +7,6 @@ export default function MouseEffects({ theme }) {
   const [hoverText, setHoverText] = useState("");
   const [isVisible, setIsVisible] = useState(false);
   const canvasRef = useRef(null);
-  const particlesRef = useRef([]);
   const ripplesRef = useRef([]);
 
   // Motion values for smooth cursor tracking
@@ -29,22 +28,6 @@ export default function MouseEffects({ theme }) {
       mouseX.set(e.clientX);
       mouseY.set(e.clientY);
 
-      // Add particle on movement in trail mode
-      if (canvasRef.current) {
-        particlesRef.current.push({
-          x: e.clientX,
-          y: e.clientY,
-          size: Math.random() * 4 + 1.5,
-          color:
-            theme === "light"
-              ? Math.random() > 0.5 ? "rgba(0, 150, 136, 1)" : "rgba(120, 50, 180, 1)"
-              : Math.random() > 0.5 ? "#00d3bd" : "#a855f7",
-          vx: (Math.random() - 0.5) * 1.2,
-          vy: (Math.random() - 0.5) * 1.2,
-          alpha: 1,
-          decay: Math.random() * 0.02 + 0.015,
-        });
-      }
     };
 
     const handleMouseDown = (e) => {
@@ -114,7 +97,7 @@ export default function MouseEffects({ theme }) {
     };
   }, [mouseX, mouseY, theme]);
 
-  // Canvas Animation loop for particle trails & ripples
+  // Canvas animation loop for click ripples
   useEffect(() => {
     let animationFrameId;
     const canvas = canvasRef.current;
@@ -157,29 +140,6 @@ export default function MouseEffects({ theme }) {
         ctx.restore();
       }
 
-      // Render particle trails
-      for (let i = particlesRef.current.length - 1; i >= 0; i--) {
-        const p = particlesRef.current[i];
-        p.x += p.vx;
-        p.y += p.vy;
-        p.alpha -= p.decay;
-
-        if (p.alpha <= 0) {
-          particlesRef.current.splice(i, 1);
-          continue;
-        }
-
-        ctx.save();
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = p.color;
-        ctx.globalAlpha = p.alpha;
-        ctx.shadowBlur = 8;
-        ctx.shadowColor = p.color;
-        ctx.fill();
-        ctx.restore();
-      }
-
       animationFrameId = requestAnimationFrame(render);
     };
 
@@ -195,7 +155,7 @@ export default function MouseEffects({ theme }) {
 
   return (
     <>
-      {/* Canvas Layer for Sparkle Trails & Click Ripples */}
+      {/* Canvas layer for click ripples */}
       <canvas
         ref={canvasRef}
         className="fixed inset-0 pointer-events-none z-[9998]"
