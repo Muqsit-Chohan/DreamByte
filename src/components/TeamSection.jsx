@@ -43,6 +43,44 @@ export default function TeamSection({ onSelectMember }) {
       instagram: "https://instagram.com/",
       highlights: ["Founding Partner", "Product Engineering", "User Feedback Loops"],
     },
+
+     {
+      name: "Muqsit",
+      role: "Junior Web Developer",
+      location: "Karachi, Pakistan",
+      bio: "Junior web developer contributing to responsive, accessible, and production-ready web experiences at DreamByte.",
+      image: "/images/Muqsit.jpeg",
+      fallbackColor: "from-amber-500 to-orange-600",
+      initials: "M",
+      linkedin: "https://linkedin.com/in/syed-safeer-023422357",
+      instagram: "https://instagram.com/",
+      highlights: ["Responsive Web Development", "Frontend Components", "Web Performance"],
+    },
+    {
+      name: "Hurrain",
+      role: "Junior Backend Developer",
+      location: "Karachi, Pakistan",
+      bio: "Junior backend developer building reliable APIs, integrations, and server-side systems that support DreamByte products.",
+      image: "/images/Hurrain.jpeg",
+      fallbackColor: "from-blue-500 to-indigo-600",
+      initials: "H",
+      linkedin: "https://linkedin.com/in/syed-safeer-023422357",
+      instagram: "https://instagram.com/",
+      highlights: ["API Development", "Backend Integrations", "Database Systems"],
+    },
+    {
+      name: "Umam",
+      role: "Junior Frontend Developer",
+      location: "Karachi, Pakistan",
+      bio: "Junior frontend developer focused on polished interfaces, reusable UI components, and smooth user experiences.",
+      image: "/images/Umam.jpeg",
+      fallbackColor: "from-fuchsia-500 to-purple-600",
+      initials: "U",
+      linkedin: "https://linkedin.com/in/syed-safeer-023422357",
+      instagram: "https://instagram.com/",
+      highlights: ["UI Development", "Reusable Components", "Responsive Interfaces"],
+    },
+    
   ];
 
   return (

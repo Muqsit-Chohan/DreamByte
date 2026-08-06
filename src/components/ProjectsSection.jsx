@@ -10,7 +10,7 @@ import taxAppImg from "../assets/tax-app.jpeg";
 import rhrAppImg from "../assets/rhr-app.jpeg";
 import aiVoiceAgentImg from "../assets/ai-voice-agent.jpeg";
 import arrWebsiteImg from "../assets/arr-website.jpeg";
-import megaWipesImg from "../assets/mega-wipes.jpeg";
+import megaWipesImg from "../assets/mega-wipes.png";
 
 const projects = [
   {
