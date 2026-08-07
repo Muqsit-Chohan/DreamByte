@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import FounderProfile from './components/FounderProfile';
@@ -9,6 +9,7 @@ import ServicesPage from './pages/ServicesPage';
 import ContactPage from './pages/ContactPage';
 import MouseEffects from './components/MouseEffects';
 import BackToTopButton from './components/BackToTopButton';
+import { destroyLenis, initLenis, scrollToTop } from './lib/lenis';
 import SafeerImage from './assets/images/Safeer.jpeg';
 import SamiImage from './assets/images/Sami.jpeg';
 import BasitImage from './assets/images/Basit.jpeg';
@@ -48,6 +49,11 @@ export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
 
   useEffect(() => {
+    initLenis();
+    return () => destroyLenis();
+  }, []);
+
+  useEffect(() => {
     const root = window.document.documentElement;
     localStorage.setItem('theme', theme);
     if (theme === 'dark') {
@@ -66,7 +72,7 @@ export default function App() {
   useEffect(() => {
     // When the page changes, scroll to the top of the page.
     if (!selectedFounder) {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      scrollToTop();
     }
   }, [currentPage, selectedFounder]);
 
@@ -160,7 +166,7 @@ export default function App() {
   const handleBackToMain = () => {
     setSelectedFounder(null);
     window.location.hash = '';
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    scrollToTop();
   };
 
   const toggleTheme = () => {

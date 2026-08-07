@@ -15,7 +15,7 @@ export default function ServicesSection({ isTeaser, setCurrentPage }) {
   const servicesToShow = isTeaser ? services : services;
 
   return (
-    <section id="services" className="py-20 sm:py-32">
+    <section id="services" className="py-10 sm:py-22">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <Badge variant="purple" className="mb-4">What We Do</Badge>

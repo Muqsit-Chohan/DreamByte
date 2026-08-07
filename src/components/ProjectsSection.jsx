@@ -104,7 +104,7 @@ export default function ProjectsSection({ limit, showViewAll, setCurrentPage, fi
   const projectsToShow = limit ? filteredProjects.slice(0, limit) : filteredProjects;
 
   return (
-    <section id="projects" className="py-24 relative bg-transparent overflow-hidden">
+    <section id="projects" className="py-10 relative bg-transparent overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {!filter && (
           <div className="text-center max-w-3xl mx-auto">

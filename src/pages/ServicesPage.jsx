@@ -26,7 +26,7 @@ const engagementModels = [
 
 export default function ServicesPage() {
   return (
-    <div className="pt-28 pb-20 relative z-10 animate-fadeIn">
+    <div className="pt-10 relative z-10 animate-fadeIn">
       {/* Hero Banner */}
       <section className="py-10 sm:py-16 text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

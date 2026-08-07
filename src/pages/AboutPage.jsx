@@ -14,14 +14,14 @@ const coreValues = [
 
 export default function AboutPage({ onSelectFounder }) {
   return (
-    <div className="pt-28 pb-20 relative z-10 animate-fadeIn">
+    <div className="pt-10 pb-10 relative z-10 animate-fadeIn">
       <section className="py-10 sm:py-16 text-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Badge variant="purple" className="mb-4">
             <Users className="w-4 h-4 shrink-0" />
             <span>Who We Are</span>
           </Badge>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 dark:text-white font-heading mt-4">
+          <h1 className="max-w-3xl mx-auto text-4xl sm:text-5xl font-extrabold text-slate-900 dark:text-white font-heading mt-4">
             Where Cutting-Edge AI Meets World-Class Software Engineering.
           </h1>
         </div>

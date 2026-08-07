@@ -8,7 +8,7 @@ export default function ProjectsPage() {
   const [activeFilter, setActiveFilter] = useState('All');
 
   return (
-    <div className="pt-28 pb-20 relative z-10 animate-fadeIn">
+    <div className="pt-28 pb-10 relative z-10 animate-fadeIn">
       {/* Header & Filter System */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
         <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 dark:text-white font-heading">

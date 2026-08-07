@@ -4,6 +4,7 @@ import { InstagramIcon as Instagram, LinkedinIcon as Linkedin } from './BrandIco
 import { Button } from './ui/Button';
 import { Card } from './ui/Card';
 import { Badge } from './ui/Badge';
+import { scrollToTop } from '../lib/lenis';
 
 const founderProfiles = [
   {
@@ -101,7 +102,7 @@ const founderProfiles = [
 
 export default function FounderProfile({ member, onBack }) {
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    scrollToTop();
   }, []);
 
   if (!member) return null;

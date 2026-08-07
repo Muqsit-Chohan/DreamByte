@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import ThemeToggle from "./ThemeToggle";
 import DreamByteLogo from "../assets/images/dreambyte-logo.png";
+import { scrollToTop } from '../lib/lenis';
 
 const NAV_LINKS = [
     { id: 'home', title: 'Home' },
@@ -81,14 +82,14 @@ export default function Navbar({ setCurrentPage, currentPage, theme, toggleTheme
         e.preventDefault();
         setCurrentPage(id);
         setMobileMenuOpen(false);
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        scrollToTop();
     };
 
     const handleLogoClick = (e) => {
         e.preventDefault();
         setCurrentPage('home');
         setMobileMenuOpen(false);
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        scrollToTop();
     };
 
     // Header class – scrolled glass styling

@@ -104,7 +104,7 @@ export default function TeamSection({ onSelectMember }) {
   ];
 
   return (
-    <section id="team" className="py-24 relative bg-transparent overflow-hidden">
+    <section id="team" className="py-10 relative bg-transparent overflow-hidden">
       <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[600px] h-[400px] bg-teal-500/10 rounded-full blur-[160px] pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto">
