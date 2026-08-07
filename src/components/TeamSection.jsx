@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Users, ArrowUpRight, MapPin, X } from "lucide-react";
+import SafeerImage from "../assets/images/Safeer.jpeg";
+import SamiImage from "../assets/images/Sami.jpeg";
+import BasitImage from "../assets/images/Basit.jpeg";
+import MuqsitImage from "../assets/images/Muqsit.jpeg";
+import HurrainImage from "../assets/images/Hurrain.jpeg";
+import UmamImage from "../assets/images/Umam.jpeg";
+import ZohaImage from "../assets/images/Zoha.jpeg";
 import { InstagramIcon as Instagram, LinkedinIcon as Linkedin } from "./BrandIcons";
 
 export default function TeamSection({ onSelectMember }) {
@@ -12,7 +19,7 @@ export default function TeamSection({ onSelectMember }) {
       role: "CEO & Co-Founder",
       location: "Karachi, Pakistan",
       bio: "Product vision and strategy behind Nexsora OS. Drives overall direction, AI integrations, investor relations, and core engineering decisions at DreamByte.",
-      image: "/images/Safeer.jpeg",
+      image: SafeerImage,
       fallbackColor: "from-teal-500 to-cyan-600",
       initials: "SS",
       linkedin: "https://linkedin.com/in/syed-safeer-023422357",
@@ -24,10 +31,10 @@ export default function TeamSection({ onSelectMember }) {
       role: "COO & Co-Founder",
       location: "Karachi, Pakistan",
       bio: "Keeps DreamByte running smoothly while the product ships fast. Handles company operations, creator onboarding, and strategic growth for Nexsora OS.",
-      image: "/images/Sami.jpeg",
+      image: SamiImage,
       fallbackColor: "from-purple-500 to-indigo-600",
       initials: "S",
-      linkedin: "https://linkedin.com/in/syed-safeer-023422357",
+      linkedin: "https://www.linkedin.com/in/muhammad-sami-394574387/",
       instagram: "https://instagram.com/",
       highlights: ["Creator Onboarding & Partnerships", "Operational Execution", "Community Growth"],
     },
@@ -36,7 +43,7 @@ export default function TeamSection({ onSelectMember }) {
       role: "Co-Founder",
       location: "Karachi, Pakistan",
       bio: "Core founding partner at DreamByte. Part of the founding engineering & product team driving Nexsora OS forward from Karachi.",
-      image: "/images/Basit.jpeg",
+      image: BasitImage,
       fallbackColor: "from-pink-500 to-rose-600",
       initials: "B",
       linkedin: "https://linkedin.com/in/syed-safeer-023422357",
@@ -49,11 +56,11 @@ export default function TeamSection({ onSelectMember }) {
       role: "Junior Web Developer",
       location: "Karachi, Pakistan",
       bio: "Junior web developer contributing to responsive, accessible, and production-ready web experiences at DreamByte.",
-      image: "/images/Muqsit.jpeg",
+      image: MuqsitImage,
       fallbackColor: "from-amber-500 to-orange-600",
       initials: "M",
-      linkedin: "https://linkedin.com/in/syed-safeer-023422357",
-      instagram: "https://instagram.com/",
+      linkedin: "https://www.linkedin.com/in/abdul-muqsit-chohan/",
+      instagram: "https://www.instagram.com/a.muqsit___?igsh=MWhiaWxzbTBybXBjdg==",
       highlights: ["Responsive Web Development", "Frontend Components", "Web Performance"],
     },
     {
@@ -61,7 +68,7 @@ export default function TeamSection({ onSelectMember }) {
       role: "Junior Backend Developer",
       location: "Karachi, Pakistan",
       bio: "Junior backend developer building reliable APIs, integrations, and server-side systems that support DreamByte products.",
-      image: "/images/Hurrain.jpeg",
+      image: HurrainImage,
       fallbackColor: "from-blue-500 to-indigo-600",
       initials: "H",
       linkedin: "https://linkedin.com/in/syed-safeer-023422357",
@@ -73,13 +80,26 @@ export default function TeamSection({ onSelectMember }) {
       role: "Junior Frontend Developer",
       location: "Karachi, Pakistan",
       bio: "Junior frontend developer focused on polished interfaces, reusable UI components, and smooth user experiences.",
-      image: "/images/Umam.jpeg",
+      image: UmamImage,
       fallbackColor: "from-fuchsia-500 to-purple-600",
       initials: "U",
       linkedin: "https://linkedin.com/in/syed-safeer-023422357",
       instagram: "https://instagram.com/",
       highlights: ["UI Development", "Reusable Components", "Responsive Interfaces"],
     },
+    {
+      name: "Zoha",
+      role: "Junior Cybersecurity Engineer",
+      location: "Karachi, Pakistan",
+      bio: "Junior cybersecurity engineer focused on protecting DreamByte's digital assets and ensuring robust security practices.",
+      image: ZohaImage,
+      fallbackColor: "from-fuchsia-500 to-purple-600",
+      initials: "Z",
+      linkedin: "https://linkedin.com/in/syed-safeer-023422357",
+      instagram: "https://instagram.com/",
+      highlights: ["Cybersecurity", "Risk Assessment", "Security Audits"],
+    },
+
     
   ];
 
@@ -184,12 +204,12 @@ export default function TeamSection({ onSelectMember }) {
               </div>
               <div className="mt-6 flex items-center gap-3">
                 {selectedMember.linkedin && (
-                  <a href={selectedMember.linkedin} target="_blank" rel="noopener noreferrer" className="flex-1 text-center py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-xs font-semibold text-gray-800 dark:text-slate-200 dark:hover:bg-white/10 flex items-center justify-center gap-1.5 transition-colors">
+                  <a href={selectedMember.linkedin} target="_blank" rel="noopener noreferrer" className="flex-1 whitespace-nowrap text-center py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-xs font-semibold text-gray-800 dark:text-slate-200 dark:hover:bg-white/10 flex items-center justify-center gap-1.5 transition-colors">
                     <Linkedin className="w-4 h-4 text-cyan-600 dark:text-cyan-400" /> LinkedIn Profile
                   </a>
                 )}
                 {selectedMember.instagram && (
-                  <a href={selectedMember.instagram} target="_blank" rel="noopener noreferrer" className="flex-1 text-center py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-xs font-semibold text-gray-800 dark:text-slate-200 dark:hover:bg-white/10 flex items-center justify-center gap-1.5 transition-colors">
+                  <a href={selectedMember.instagram} target="_blank" rel="noopener noreferrer" className="flex-1 whitespace-nowrap text-center py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-xs font-semibold text-gray-800 dark:text-slate-200 dark:hover:bg-white/10 flex items-center justify-center gap-1.5 transition-colors">
                     <Instagram className="w-4 h-4 text-pink-600 dark:text-pink-400" /> Instagram Profile
                   </a>
                 )}

@@ -9,6 +9,9 @@ import ServicesPage from './pages/ServicesPage';
 import ContactPage from './pages/ContactPage';
 import MouseEffects from './components/MouseEffects';
 import BackToTopButton from './components/BackToTopButton';
+import SafeerImage from './assets/images/Safeer.jpeg';
+import SamiImage from './assets/images/Sami.jpeg';
+import BasitImage from './assets/images/Basit.jpeg';
 
 const GLOBAL_STYLES = `
 @keyframes hero-breathe {
@@ -79,7 +82,7 @@ export default function App() {
           tagline: 'Building AI-native products from Karachi, Pakistan. Founder of DreamByte and the mind behind Nexora OS.',
           fullBio: 'Safeer is the CEO and Co-Founder of DreamByte Studio, the company behind Nexora OS — an AI-powered creator platform for South Asian content creators. He leads product vision, go-to-market strategy, investor relations, and engineering direction at DreamByte. Alongside the studio, he studies Software Engineering at Sir Syed University of Engineering & Technology (SSUET).',
           aboutTitle: 'Product builder. Studio founder. Engineering student.',
-          image: '/images/Safeer.jpeg',
+          image: SafeerImage,
           fallbackColor: 'from-teal-500 to-cyan-600',
           initials: 'SS',
           linkedin: 'https://linkedin.com/in/syed-safeer-023422357',
@@ -106,7 +109,7 @@ export default function App() {
           tagline: 'Operations & Creator Partnerships lead at DreamByte. Driving creator acquisition and scaling Nexora OS.',
           fullBio: 'Sami keeps DreamByte running smoothly while the product ships fast. He handles studio operations, creator onboarding, Instagram partnerships, and operational growth for Nexora OS.',
           aboutTitle: 'Operations leader. Creator partner. Studio co-founder.',
-          image: '/images/Sami.jpeg',
+          image: SamiImage,
           fallbackColor: 'from-purple-500 to-indigo-600',
           initials: 'S',
           linkedin: 'https://linkedin.com/in/syed-safeer-023422357',
@@ -128,7 +131,7 @@ export default function App() {
           tagline: 'Core founding partner at DreamByte driving product engineering and user feedback loops for Nexora OS.',
           fullBio: 'Basit is a core co-founder at DreamByte. Part of the founding engineering & product team driving Nexora OS forward from Karachi.',
           aboutTitle: 'Core founder. Product engineer.',
-          image: '/images/Basit.jpeg',
+          image: BasitImage,
           fallbackColor: 'from-pink-500 to-rose-600',
           initials: 'B',
           linkedin: 'https://linkedin.com/in/syed-safeer-023422357',

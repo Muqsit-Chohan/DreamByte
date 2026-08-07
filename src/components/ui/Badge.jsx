@@ -2,7 +2,7 @@ import React from 'react';
 import { cn } from '../../lib/utils';
 
 export function Badge({ className, variant = 'teal', children, icon: Icon, ...props }) {
-  const baseStyles = 'inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider transition-colors';
+  const baseStyles = 'inline-flex flex-row items-center whitespace-nowrap gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider transition-colors';
 
   const variants = {
     teal: 'bg-teal-500/10 border border-teal-500/30 text-teal-700 dark:text-teal-400',
@@ -15,8 +15,14 @@ export function Badge({ className, variant = 'teal', children, icon: Icon, ...pr
 
   return (
     <span className={cn(baseStyles, variants[variant], className)} {...props}>
-      {Icon && <Icon className="w-3.5 h-3.5" />}
-      <span>{children}</span>
+      {Icon ? (
+        <>
+          <Icon className="w-3.5 h-3.5 shrink-0" />
+          <span className="whitespace-nowrap">{children}</span>
+        </>
+      ) : (
+        children
+      )}
     </span>
   );
 }

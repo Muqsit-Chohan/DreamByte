@@ -212,8 +212,8 @@ function TestimonialsSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <Badge variant="purple" className="mb-4 w-fit mx-auto flex items-center justify-center gap-1.5">
-            <Quote className="w-4 h-4 mr-2" />
-            Client Feedback
+            <Quote className="w-4 h-4 shrink-0" />
+            <span>Client Feedback</span>
           </Badge>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-slate-50 font-heading">
             What people say after shipping with us
@@ -333,8 +333,8 @@ export default function HomePage({ _onSelectFounder, setCurrentPage, theme, togg
       <section id="about" className="py-20 sm:py-24 bg-transparent">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Badge variant="purple" className="mb-4 w-fit mx-auto flex items-center justify-center gap-1.5">
-            <Users className="w-4 h-4 mr-2 " />
-            Who We Are
+            <Users className="w-4 h-4 shrink-0" />
+            <span>Who We Are</span>
           </Badge>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-slate-50 font-heading">
             A Small Team of Passionate Builders

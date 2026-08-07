@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import ThemeToggle from "./ThemeToggle";
+import DreamByteLogo from "../assets/images/dreambyte-logo.png";
 
 const NAV_LINKS = [
     { id: 'home', title: 'Home' },
@@ -113,11 +114,11 @@ export default function Navbar({ setCurrentPage, currentPage, theme, toggleTheme
                     aria-label="DreamByte home"
                 >
                     <div className="relative h-8 w-8 rounded-md shadow-[0_0_15px_rgba(0,211,189,0.25)] transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(0,211,189,0.5)] group-hover:scale-110 group-hover:rotate-6">
-                        <div className="h-full w-full rounded-md bg-[#0b1217] flex items-center justify-center overflow-hidden">
+                        <div className="h-full w-full rounded-md bg-white dark:bg-[#0b1217] flex items-center justify-center overflow-hidden">
                             <img
-                                src="/images/dreambytelogo.jpg"
+                                src={DreamByteLogo}
                                 alt="DreamByte Logo"
-                                className="h-full w-full rounded-md object-cover"
+                                className="h-full w-full rounded-md object-cover invert dark:invert-0 transition-[filter] duration-300"
                             />
                         </div>
                     </div>

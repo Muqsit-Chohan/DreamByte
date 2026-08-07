@@ -28,7 +28,7 @@ const founderProfiles = [
     aboutTitle: 'Operations leader. Growth partner.',
     contact: { whatsapp: 'https://wa.me/923102110584', email: 'mailto:dreambyte.space@gmail.com' },
     skills: ['Operations', 'Creator Partnerships', 'Community Growth', 'Project Management', 'Product Strategy', 'Client Relations'],
-    education: [],
+    education: [{ degree: 'Computer Engineering Technology', institution: 'Sir Syed University of Engineering & Technology', period: '2022 - Present' }],
     experience: [
       { role: 'COO & Co-Founder - DreamByte', period: '2024 - Present', desc: 'Driving company operations, creator onboarding, strategic partnerships, and community growth.' },
       { role: 'Operations & Growth Lead', period: '2024 - Present', desc: 'Building systems for delivery, partnerships, and long-term customer relationships.' },
@@ -51,12 +51,14 @@ const founderProfiles = [
     fallbackColor: 'from-amber-500 to-orange-600',
     location: 'Karachi, Pakistan',
     aboutTitle: 'Junior web developer. Web experience builder.',
-    contact: { whatsapp: 'https://wa.me/923102110584', email: 'mailto:dreambyte.space@gmail.com' },
-    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Responsive Design', 'Web Performance'],
-    education: [],
+    contact: { whatsapp: 'https://wa.me/923493485645', email: 'mailto:muqsit816@gmail.com' },
+    skills: ['React', 'Next.js', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'JWT Authentication', 'Framer Motion', 'Vite', 'GSAP', 'Lenis', 'Git & GitHub', 'Responsive Design'],
+    education: [{ degree: 'Software Engineering', institution: 'Sindh Madressatul Islam University (SMIU)', period: '2023 - Present' },
+              { degree: 'Web And Mobile App Development', institution: 'Saylani Mass IT Training (SMIT)', period: '2024 - 2025' }
+    ],
     experience: [
-      { role: 'Junior Web Developer - DreamByte', period: '2024 - Present', desc: 'Building responsive, accessible, and production-ready web experiences for DreamByte products.' },
-      { role: 'Web Development Contributor', period: '2024 - Present', desc: 'Supporting frontend implementation, reusable components, and web performance improvements.' },
+      { role: 'Junior Web Developer - DreamByte', period: '2026 - Present', desc: 'Building responsive, accessible, and production-ready web experiences for DreamByte products.' },
+      { role: 'Web Development Contributor', period: '2026 - Present', desc: 'Supporting frontend implementation, reusable components, and web performance improvements.' },
     ],
   }, {
     name: 'Hurrain',
@@ -65,10 +67,10 @@ const founderProfiles = [
     aboutTitle: 'Junior backend developer. Systems builder.',
     contact: { whatsapp: 'https://wa.me/923102110584', email: 'mailto:dreambyte.space@gmail.com' },
     skills: ['Node.js', 'Express', 'REST APIs', 'Supabase', 'Databases', 'Backend Integrations'],
-    education: [],
+    education: [{ degree: 'Computer Engineering Technology', institution: 'Sir Syed University of Engineering & Technology', period: '2022 - Present' }],
     experience: [
-      { role: 'Junior Backend Developer - DreamByte', period: '2024 - Present', desc: 'Building reliable APIs, integrations, and server-side systems that support DreamByte products.' },
-      { role: 'Backend Engineering Contributor', period: '2024 - Present', desc: 'Supporting data flows, database operations, and dependable service integrations.' },
+      { role: 'Junior Backend Developer - DreamByte', period: '2026 - Present', desc: 'Building reliable APIs, integrations, and server-side systems that support DreamByte products.' },
+      { role: 'Backend Engineering Contributor', period: '2026 - Present', desc: 'Supporting data flows, database operations, and dependable service integrations.' },
     ],
   }, {
     name: 'Umam',
@@ -77,10 +79,22 @@ const founderProfiles = [
     aboutTitle: 'Junior frontend developer. Interface builder.',
     contact: { whatsapp: 'https://wa.me/923102110584', email: 'mailto:dreambyte.space@gmail.com' },
     skills: ['React', 'JavaScript', 'Tailwind CSS', 'UI Development', 'Responsive Design', 'Reusable Components'],
+    education: [{ degree: 'Computer Engineering Technology', institution: 'Sir Syed University of Engineering & Technology', period: '2022 - Present' }],
+    experience: [
+      { role: 'Junior Frontend Developer - DreamByte', period: '2026 - Present', desc: 'Creating polished interfaces, reusable UI components, and smooth user experiences.' },
+      { role: 'Frontend Engineering Contributor', period: '2026 - Present', desc: 'Helping translate product requirements into responsive and maintainable frontend experiences.' },
+    ],
+  }, {
+    name: 'Zoha',
+    fallbackColor: 'from-fuchsia-500 to-purple-600',
+    location: 'Karachi, Pakistan',
+    aboutTitle: 'Junior Cybersecurity Engineer.',
+    contact: { whatsapp: 'https://wa.me/923102110584', email: 'mailto:dreambyte.space@gmail.com' },
+    skills: ['Cybersecurity', 'Network Security', 'Vulnerability Assessment', 'Penetration Testing', 'Security Audits', 'Incident Response'],
     education: [],
     experience: [
-      { role: 'Junior Frontend Developer - DreamByte', period: '2024 - Present', desc: 'Creating polished interfaces, reusable UI components, and smooth user experiences.' },
-      { role: 'Frontend Engineering Contributor', period: '2024 - Present', desc: 'Helping translate product requirements into responsive and maintainable frontend experiences.' },
+      { role: 'Junior Cybersecurity Engineer - DreamByte', period: '2026 - Present', desc: 'Focusing on protecting DreamByte digital assets and ensuring robust security practices.' },
+      { role: 'Cybersecurity Contributor', period: '2026 - Present', desc: 'Supporting security assessments, risk evaluations, and security audit processes.' },
     ],
   },
 ];
@@ -155,7 +169,7 @@ export default function FounderProfile({ member, onBack }) {
                   href={profile.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 rounded-xl bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-gray-700 dark:text-slate-200 hover:text-gray-900 dark:hover:text-white hover:border-cyan-500/40 text-xs font-semibold flex items-center gap-2 transition-all"
+                  className="inline-flex items-center whitespace-nowrap px-4 py-2 rounded-xl bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-gray-700 dark:text-slate-200 hover:text-gray-900 dark:hover:text-white hover:border-cyan-500/40 text-xs font-semibold gap-2 transition-all"
                 >
                   <Linkedin className="w-4 h-4 text-cyan-600 dark:text-cyan-400" />
                   <span>LinkedIn Profile</span>
@@ -168,7 +182,7 @@ export default function FounderProfile({ member, onBack }) {
                   href={profile.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 rounded-xl bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-gray-700 dark:text-slate-200 hover:text-gray-900 dark:hover:text-white hover:border-pink-500/40 text-xs font-semibold flex items-center gap-2 transition-all"
+                  className="inline-flex items-center whitespace-nowrap px-4 py-2 rounded-xl bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-gray-700 dark:text-slate-200 hover:text-gray-900 dark:hover:text-white hover:border-pink-500/40 text-xs font-semibold gap-2 transition-all"
                 >
                   <Instagram className="w-4 h-4 text-pink-600 dark:text-pink-400" />
                   <span>Instagram</span>

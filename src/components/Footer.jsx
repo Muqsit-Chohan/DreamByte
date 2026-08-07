@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import { InstagramIcon as Instagram, GithubIcon as Github, LinkedinIcon as Linkedin } from './BrandIcons';
+import DreamByteLogo from '../assets/images/dreambyte-logo.png';
 
 
 export default function Footer() {
@@ -14,12 +15,12 @@ export default function Footer() {
           {/* Brand Col */}
           <div className="lg:col-span-2 space-y-4">
             <a href="#" className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-md p-[1px]">
+              <div className="w-8 h-8 rounded-md p-[1px] bg-white dark:bg-black overflow-hidden">
                 <img
-                                src="/images/dreambytelogo.jpg"
-                                alt="DreamByte Logo"
-                                className="h-full w-full rounded-md object-cover"
-                            />
+                                src={DreamByteLogo}
+                  alt="DreamByte Logo"
+                  className="h-full w-full rounded-md object-cover invert dark:invert-0 transition-[filter] duration-300"
+                />
               </div>
               <span className="text-xl font-extrabold text-slate-900 dark:text-white font-heading">
                 Dream<span className="text-gradient-teal">Byte</span>
@@ -36,7 +37,7 @@ export default function Footer() {
                 href="https://github.com/4playstudiosdev-cmyk/Creator-OS"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-lg bg-slate-200/60 dark:bg-white/5 border border-slate-300/60 dark:border-white/10 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-300/50 dark:hover:bg-white/10 transition-colors"
+                className="inline-flex w-8 h-8 shrink-0 items-center justify-center rounded-lg bg-slate-200/60 dark:bg-white/5 border border-slate-300/60 dark:border-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-300/50 dark:hover:bg-white/10 transition-colors"
                 title="GitHub"
               >
                 <Github className="w-4 h-4" />
@@ -45,7 +46,7 @@ export default function Footer() {
                 href="https://linkedin.com/in/syed-safeer-023422357"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-lg bg-slate-200/60 dark:bg-white/5 border border-slate-300/60 dark:border-white/10 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-slate-300/50 dark:hover:bg-white/10 transition-colors"
+                className="inline-flex w-8 h-8 shrink-0 items-center justify-center rounded-lg bg-slate-200/60 dark:bg-white/5 border border-slate-300/60 dark:border-white/10 text-slate-600 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-slate-300/50 dark:hover:bg-white/10 transition-colors"
                 title="LinkedIn"
               >
                 <Linkedin className="w-4 h-4" />
@@ -54,7 +55,7 @@ export default function Footer() {
                 href="https://instagram.com/i.saffeerr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-lg bg-slate-200/60 dark:bg-white/5 border border-slate-300/60 dark:border-white/10 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-pink-600 dark:hover:text-pink-400 hover:bg-slate-300/50 dark:hover:bg-white/10 transition-colors"
+                className="inline-flex w-8 h-8 shrink-0 items-center justify-center rounded-lg bg-slate-200/60 dark:bg-white/5 border border-slate-300/60 dark:border-white/10 text-slate-600 dark:text-slate-400 hover:text-pink-600 dark:hover:text-pink-400 hover:bg-slate-300/50 dark:hover:bg-white/10 transition-colors"
                 title="Instagram"
               >
                 <Instagram className="w-4 h-4" />
