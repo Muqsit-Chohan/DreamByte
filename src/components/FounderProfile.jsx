@@ -52,7 +52,7 @@ const founderProfiles = [
     location: 'Karachi, Pakistan',
     aboutTitle: 'Junior web developer. Web experience builder.',
     contact: { whatsapp: 'https://wa.me/923493485645', email: 'mailto:muqsit816@gmail.com' },
-    skills: ['React', 'Next.js', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'JWT Authentication', 'Framer Motion', 'Vite', 'GSAP', 'Lenis', 'Git & GitHub', 'Responsive Design'],
+    skills: ['React', 'Next.js', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'JWT Authentication', 'Supabase', 'Firebase', "UI/UX Design", 'Framer Motion', 'Vite', 'GSAP', 'Lenis', 'Git & GitHub', 'Responsive Design'],
     education: [{ degree: 'Software Engineering', institution: 'Sindh Madressatul Islam University (SMIU)', period: '2023 - Present' },
               { degree: 'Web And Mobile App Development', institution: 'Saylani Mass IT Training (SMIT)', period: '2024 - 2025' }
     ],
